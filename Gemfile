@@ -2,10 +2,6 @@ source 'https://rubygems.org'
 
 
 #gems for cucumber testing
-gem 'capybara'
-gem 'rspec'
-gem 'selenium'
-gem 'selenium-webdriver'
 gem 'pry'
 
 
@@ -56,7 +52,6 @@ gem 'nokogiri', '1.6.6.2'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'capybara'
   gem 'selenium'
@@ -75,6 +70,6 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg', '0.17.1'
+  gem 'pg' #, '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
