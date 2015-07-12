@@ -52,7 +52,6 @@ gem 'nokogiri', '1.6.6.2'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'database_cleaner'
   gem 'capybara'
   gem 'selenium'
   gem 'selenium-webdriver'
