@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
 
-#gems for cucumber testing
-gem 'pry'
-
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -52,11 +49,6 @@ gem 'nokogiri', '1.6.6.2'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'capybara'
-  gem 'selenium'
-  gem 'selenium-webdriver'
-  gem 'database_cleaner'
-
   gem 'sqlite3', '1.3.9'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '3.4.0'
