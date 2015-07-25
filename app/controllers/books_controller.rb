@@ -22,6 +22,7 @@ class BooksController < ApplicationController
   end
 
   def user_collection
+    UserMailer.password_reset_email(current_user)
     @current_user_library = current_user.books.all
     @current_user_name = current_user.email
   end

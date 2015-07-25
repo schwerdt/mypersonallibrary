@@ -39,6 +39,8 @@ gem 'httparty'
 #This gem is for parsing XML response from the API I am calling
 gem 'nokogiri', '1.6.6.2'
 
+gem 'figaro' #For not sending email passwords to github
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
