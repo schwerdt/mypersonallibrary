@@ -13,8 +13,8 @@ Rails.application.configure do
   domain: "gmail.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: ENV['GMAIL_USERNAME_DEV'],
-  password: ENV['GMAIL_PASSWORD_DEV']
+  user_name: 'my.personal.library.helper',
+  password: 'tekabear'
   }
 
 
