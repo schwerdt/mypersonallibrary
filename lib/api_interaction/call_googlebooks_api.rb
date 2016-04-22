@@ -1,7 +1,7 @@
 require 'httparty'
  
 module CallGoogleBooksAPI
-  BaseURI = "http://www.books.google.com/books"
+  BaseURI = "http://books.google.com/books"
   Bibkeys = ["OCLC"]
   def self.generate_query(params)
     query_string = {"jscmd" => "viewapi"}
