@@ -40,7 +40,7 @@
     %br
     = comment.comment
     %br
-    = form_tag("/comments/delete/#{comment.id}", :method => "post") do
+    = form_tag("/comments/delete/#{comment.id}/#{@book_of_interest[:oclc]}", :method => "post") do
       = submit_tag 'Delete Comment'
     %br
     %br

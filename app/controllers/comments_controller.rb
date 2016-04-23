@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
     book = current_user.books.where(oclc: oclc).first
     return 'Book not found' unless book
     Comment.create(user_id: current_user.id, book_id: book.id, comment: comment)
+    redirect_to "/books/item/#{oclc}"
   end
 
   def delete_comment
@@ -17,5 +18,6 @@ class CommentsController < ApplicationController
     comment_to_delete = current_user.comments.where(id: comment_id).first
     return 'Cannot find a comment with this id for current user' unless comment_to_delete
     comment_to_delete.destroy
+    redirect_to "/books/item/#{params[:oclc]}"
   end
 end

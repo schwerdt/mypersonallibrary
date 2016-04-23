@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   resources :comments do
     collection do
       post ":oclc", to: 'comments#add_comment'
-      post "/delete/:comment_id", to: 'comments#delete_comment'
+      post "/delete/:comment_id/:oclc", to: 'comments#delete_comment'
     end
   end
 
